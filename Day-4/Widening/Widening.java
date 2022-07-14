@@ -1,4 +1,4 @@
-class Winding
+class Widening
 {
 public static void main(String[] args) 
 {
