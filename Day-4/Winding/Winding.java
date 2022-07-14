@@ -9,8 +9,8 @@ public static void main(String[] args)
 	double a = c;
 	double b = d;
 
-	System.out.println("Integer into Double : " + a);
-	System.out.println("Integer into Double : " + b);	
+	System.out.println("(67) Integer into Double : " + a);
+	System.out.println("(33) Integer into Double : " + b);	
 	
 
 }
