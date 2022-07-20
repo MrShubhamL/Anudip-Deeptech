@@ -1,8 +1,7 @@
-
 public class SpyNumber {
 	public static void main(String[] args) {
-		int no = 123;
-
+		int no = 1124;
+		int x = no;
 		int r = 0;
 		int temp = 0;
 		int p = 1;
@@ -13,10 +12,11 @@ public class SpyNumber {
 			no = no / 10;
 
 		}
+		System.out.println("Entered Number is: " + x);
 		if (temp == p) {
-			System.out.println("Number is a spy number.");
+			System.out.println("The Number "+x+" is a spy number.");
 		} else {
-			System.out.println("Number is not a spy number.");
+			System.out.println("The Number "+x+" is not a spy number.");
 		}
 	}
 }
