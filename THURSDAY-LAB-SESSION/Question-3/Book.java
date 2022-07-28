@@ -1,4 +1,4 @@
- class Book {
+class Book {
 	
 	private String bookName;
 	private String isbnNumber;
@@ -54,9 +54,19 @@
 	}
 	
 	public static void main(String[] args) {
+		System.out.println("Question: _____________________________________________________________________________________________");
+		System.out.println("We have to calculate the percentage of marks obtained in three subjects (each out of\r\n"
+				+ "100) by student A and in four subjects (each out of 100) by student B. Create an abstract\r\n"
+				+ "class 'Marks' with an abstract method 'getPercentage'. It is inherited by two other\r\n"
+				+ "classes 'A' and 'B' each having a method with the same name which returns the\r\n"
+				+ "percentage of the students. The constructor of student A takes the marks in three\r\n"
+				+ "subjects as its parameters and the marks in four subjects as its parameters for student\r\n"
+				+ "B. Create an object for eac of the two classes and print the percentage of marks for both\r\n"
+				+ "the students.");
 		Book b = new Book("Information Technology", "SN00235", "Stanley Wright", "Express Publishing");
+		System.out.println("_______________________________________________________________________________________________________");
+		System.out.println("Solution: ");
 		System.out.println(b.getBookInfo());
-
 	}
 	
 
