@@ -54,16 +54,15 @@ class Book {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println("Question: _____________________________________________________________________________________________");
-		System.out.println("We have to calculate the percentage of marks obtained in three subjects (each out of\r\n"
-				+ "100) by student A and in four subjects (each out of 100) by student B. Create an abstract\r\n"
-				+ "class 'Marks' with an abstract method 'getPercentage'. It is inherited by two other\r\n"
-				+ "classes 'A' and 'B' each having a method with the same name which returns the\r\n"
-				+ "percentage of the students. The constructor of student A takes the marks in three\r\n"
-				+ "subjects as its parameters and the marks in four subjects as its parameters for student\r\n"
-				+ "B. Create an object for eac of the two classes and print the percentage of marks for both\r\n"
-				+ "the students.");
-		Book b = new Book("Information Technology", "SN00235", "Stanley Wright", "Express Publishing");
+		System.out.println("Question: _______________________________________________________________________________________________________");
+		System.out.println("Create a class called Book to represent a book. A Book should include four pieces of information\r\n"
+				+ "as instance variables‐a book name, an ISBN number, an author name and a publisher. Your class\r\n"
+				+ "should have a constructor that initializes the four instance variables. Provide a mutator method\r\n"
+				+ "and accessor method (query method) for each instance variable. In addition, provide a method\r\n"
+				+ "named getBookInfo that returns the description of the book as a String (the description should\r\n"
+				+ "include all the information about the book). You should use this keyword in member methods\r\n"
+				+ "and constructor. Write a test application named BookTest to create an array of object for 30\r\n"
+				+ "elements for class Book to demonstrate the class Book's capabilities.");
 		System.out.println("_______________________________________________________________________________________________________");
 		System.out.println("Solution: ");
 		System.out.println(b.getBookInfo());
