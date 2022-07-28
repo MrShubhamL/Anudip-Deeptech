@@ -1,6 +1,4 @@
-package com.student_result;
-
-public class Book {
+class Book {
 	
 	private String bookName;
 	private String isbnNumber;
