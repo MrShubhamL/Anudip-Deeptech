@@ -56,8 +56,6 @@
 	public static void main(String[] args) {
 		Book b = new Book("Information Technology", "SN00235", "Stanley Wright", "Express Publishing");
 		System.out.println(b.getBookInfo());
-		
-		Book test[] = new Book[30];
 
 	}
 	
