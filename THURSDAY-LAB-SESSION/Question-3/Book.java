@@ -1,4 +1,6 @@
-class Book {
+package com.student_result;
+
+public class Book {
 	
 	private String bookName;
 	private String isbnNumber;
@@ -65,6 +67,9 @@ class Book {
 				+ "elements for class Book to demonstrate the class Book's capabilities.");
 		System.out.println("_______________________________________________________________________________________________________");
 		System.out.println("Solution: ");
+		
+		
+		Book b = new Book("Information Technology", "SN00235", "Stanley Wright", "Express Publishing");
 		System.out.println(b.getBookInfo());
 	}
 	
