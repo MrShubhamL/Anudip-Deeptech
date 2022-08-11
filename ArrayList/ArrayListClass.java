@@ -15,7 +15,7 @@ public class ArrayListClass {
 		list.add(55);
 		list.add(12);
 		
-		// Retrieve the elements using for loop
+		// Retrieve the elements
 		System.out.println("All Elements - " + list);
 		
 		// Removing the elements
