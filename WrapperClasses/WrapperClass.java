@@ -18,7 +18,6 @@ public class WrapperClasses {
 // Unboxing 
 class Unboxing{
 	static void example1() {
-		@SuppressWarnings("removal")
 		Integer i = new Integer(4);
 		int a = i.intValue();
 		System.out.println("Unboxing (Integer to int) : " +  i + " " + a);
