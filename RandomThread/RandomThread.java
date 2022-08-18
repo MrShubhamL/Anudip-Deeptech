@@ -28,10 +28,11 @@ class Thread3 extends Thread{
 		this.num = num;
 	}
 	
-	 public void run() {
-//		System.out.println("Square : " + num * num);
+	  public void run() {
+		System.out.println("Generated Number : " + num );
 		System.out.println("The thread " + num + " is ODD and cube of " + num + " is : " + num*num*num);
-	}
+		System.out.println("--------------------------------------------------------------");
+	 }
 	
 }
 
@@ -48,9 +49,12 @@ public class RandomThread {
 					try {Thread.sleep(1000);}catch(Exception e) {}
 					int num = th1.randomNumber();
 					if(num%2==0) {
-//						System.out.println(num);
 						Thread2 th2 = new Thread2(num);
 						th2.start();
+					}
+					else {
+						Thread3 th3 = new Thread3(num);
+						th3.start();
 					}
 				}
 			}
