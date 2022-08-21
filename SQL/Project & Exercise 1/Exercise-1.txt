@@ -1,0 +1,18 @@
+Write a SQL statement to insert a record with your own value into the table countries against each
+columns.
+
+mysql> CREATE TABLE COUNTRIES (
+    -> COUNTRY_ID VARCHAR(2),
+    -> COUNTRY_NAME VARCHAR(40),
+    -> REGION_ID DECIMAL(10,0)
+    -> );
+    
+    +--------------+---------------+------+-----+---------+-------+
+| Field        | Type          | Null | Key | Default | Extra |
++--------------+---------------+------+-----+---------+-------+
+| COUNTRY_ID   | varchar(2)    | YES  |     | NULL    |       |
+| COUNTRY_NAME | varchar(40)   | YES  |     | NULL    |       |
+| REGION_ID    | decimal(10,0) | YES  |     | NULL    |       |
++--------------+---------------+------+-----+---------+-------+
+
+mysql> INSERT INTO COUNTRIES VALUES ('C1','INDIA',1001);
