@@ -1,0 +1,45 @@
+Write a SQL statement to create duplicate of countries table named country_new with all structure
+and data.
+
+
+mysql> CREATE TABLE IF NOT EXISTS country_new
+    -> AS SELECT * FROM countries;
+Query OK, 2 rows affected (0.09 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| book_store         |
+| do_connect         |
+| excercise          |
+| information_schema |
+| jdbc               |
+| mysql              |
+| nutritionist       |
+| online_banking     |
+| performance_schema |
+| sys                |
++--------------------+
+10 rows in set (0.00 sec)
+
+mysql> use excercise;
+Database changed
+mysql> show tables;
++---------------------+
+| Tables_in_excercise |
++---------------------+
+| countries           |
+| country_new         |
++---------------------+
+2 rows in set (0.02 sec)
+
+mysql> select * from country_new;
++------------+--------------+-----------+
+| COUNTRY_ID | COUNTRY_NAME | REGION_ID |
++------------+--------------+-----------+
+| C1         | INDIA        |      1001 |
+| C1         | India        |      NULL |
++------------+--------------+-----------+
+2 rows in set (0.00 sec)
