@@ -1,0 +1,17 @@
+Write a SQL statement to insert one row into the table countries against the column country_id and
+country_name.
+
+
+mysql> INSERT INTO countries (country_id,country_name) VALUES('C1','India');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> SELECT * FROM countries;
++------------+--------------+-----------+
+| COUNTRY_ID | COUNTRY_NAME | REGION_ID |
++------------+--------------+-----------+
+| C1         | INDIA        |      1001 |
+| C1         | India        |      NULL |
++------------+--------------+-----------+
+2 rows in set (0.00 sec)
+
+mysql>
